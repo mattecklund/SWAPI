@@ -1,3 +1,7 @@
+Official submission submits:
+https://github.com/mattecklund/SWAPI/commit/38ad26714f74d95fe2d07e7b0691fbe70296f4b8
+https://github.com/mattecklund/SWAPI/commit/0a2d86cffa5220824df678ee92b9d8a010cd8a9e
+
 The simplest way to verify this code pulls from SWAPI is to run the files in a basic http server.
 
 Necessary files are
