@@ -4,7 +4,25 @@
 
 {{response}}
 <br><br><br>
-{{ships}}
+<div ng-repeat='ship in ships'>
+	<ul>Name: {{ship.name}}
+		<li>Model: {{ship.model}}</li>
+		<li>Manufacturer: {{ship.manufacturer}}</li>
+		<li>Cost: {{ship.cost_in_credits}}</li>
+		<li>Length: {{ship.length}}</li>
+		<li>Speed: {{ship.max_atmosphering_speed}}</li>
+		<li>Crew: {{ship.crew}} people</li>
+		<li>Passengers: {{ship.passengers}} people</li>
+		<li>Cargo Capacity: {{ship.cargo_capacity}}</li>
+		<li>HyperDrive Rating: {{ship.hyperdrive_rating}}</li>
+		<li>Consumables: {{ship.consumables}}</li>
+		<li>MGLT: {{ship.MGLT}}</li>
+		<li>Class: {{ship.starship_class}}</li>
+		<li>Pilots: <div ng-repeat='pilot in ship.pilots'>{{pilot}}</div></li>
+	</ul>
+	<br>
+</div>
+<br><br><br>
 
 </body>
 
