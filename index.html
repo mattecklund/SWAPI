@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html ng-app='swapi'>
-<body ng-controller='mainCtrl'>
+<head>
+	<title>Star Wars API Getter</title>
+</head>
+<body>
 
-{{response}}
-<br><br><br>
-<div ng-repeat='ship in ships'>
-	<ul>Name: {{ship.name}}
-		<li>Model: {{ship.model}}</li>
-		<li>Manufacturer: {{ship.manufacturer}}</li>
-		<li>Cost: {{ship.cost_in_credits}}</li>
-		<li>Length: {{ship.length}}</li>
-		<li>Speed: {{ship.max_atmosphering_speed}}</li>
-		<li>Crew: {{ship.crew}} people</li>
-		<li>Passengers: {{ship.passengers}} people</li>
-		<li>Cargo Capacity: {{ship.cargo_capacity}}</li>
-		<li>HyperDrive Rating: {{ship.hyperdrive_rating}}</li>
-		<li>Consumables: {{ship.consumables}}</li>
-		<li>MGLT: {{ship.MGLT}}</li>
-		<li>Class: {{ship.starship_class}}</li>
-		<li>Pilots: <div ng-repeat='pilot in ship.pilots'>{{pilot}}</div></li>
-	</ul>
-	<br>
-</div>
-<br><br><br>
+<div ng-view></div>
 
 </body>
 
-<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js'></script>
+<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js'></script>
+<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.js'></script>
 <script type="text/javascript" src='app.js'></script>
 <script type="text/javascript" src='controller.js'></script>
+<script type="text/javascript" src='starShips/starShipsController.js'></script>
 <script src='service.js'</script>
 </body>
 </html>
